@@ -1,21 +1,23 @@
 export const SeriesCard = (props) => {
     console.log(props);
+    // const {data}=props;
+    const {id,img_url,name,rating,summary,Cast,genre,watch_url}=props.data;
     return(
         <li>
             <div>
                 <img
-                src={props.curElem.img_url}
-                alt={props.curElem.name}
+                src={img_url}
+                alt={name}
                 width="40%"
                 height="40%"
                 />
             </div>
-            <h2>Name : {props.curElem.name}</h2>
-                    <h3>{props.curElem.rating}</h3>
-                    <p>{props.curElem.summary}</p>  
-                    <p>"Genere : "{props.curElem.genre}</p>   
-                    <p>Cast: {props.curElem.Cast}</p>
-                    <a href={props.curElem.watch_url} target="_blank"/>
+            <h2>Name : {name}</h2>
+                    <h3>{rating}</h3>
+                    <p>{summary}</p>  
+                    <p>"Genere : "{genre}</p>   
+                    <p>Cast: {Cast}</p>
+                    <a href={watch_url} target="_blank"/>
                     <button>Watch Now</button>
                     <a/>
         </li>
