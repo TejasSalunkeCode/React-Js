@@ -64,36 +64,18 @@
 
 
 
+// import { SeriesCard } from "./SeriesCard";
+import seriesData from "../api/seriesData.json";
+import { SeriesCard } from "./SeriesCard";
 
-import seriesData from "../api/seriesData.json";;
 
 const Netflexseires =() =>{
     return(
-        <ul>
-        {
-            seriesData.map((curElem) => {
-            return( <li key={curElem.id}>
-             <div>
-            <img
-                src="{seriesData[0].img_url}"
-                alt=""
-                width="40%"
-                height="40%"
-            />
-            </div>
-            <h2>Name : {curElem.name}</h2>
-                    <h3>{curElem.rating}</h3>
-                    <p>{curElem.summary}</p>  
-                    <p>"Genere : "{curElem.genre}</p>   
-                    <p>Cast: {curElem.Cast}</p>
-                    <a href={curElem.watch_url} target="_blank"/>
-                    <button>Watch Now</button>
-        </li>)
-  
-            })
-        }
-
-        </ul>
+       <ul>
+        {seriesData.map((curElem)=>{
+            <SeriesCard key={curElem.id} curElem={curElem}/>
+        })}
+       </ul>
     );
 };
 
