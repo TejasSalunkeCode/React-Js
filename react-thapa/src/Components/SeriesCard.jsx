@@ -1,7 +1,7 @@
 export const SeriesCard = (props) => {
     console.log(props);
     return(
-        <li key={props}>
+        <li>
             <div>
                 <img
                 src={props.curElem.img_url}

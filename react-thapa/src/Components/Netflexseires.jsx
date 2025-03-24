@@ -69,11 +69,11 @@ import seriesData from "../api/seriesData.json";
 import { SeriesCard } from "./SeriesCard";
 
 
-const Netflexseires =() =>{
+const Netflexseires =  () =>{
     return(
        <ul>
         {seriesData.map((curElem)=>{
-            <SeriesCard key={curElem.id} curElem={curElem}/>
+        return <SeriesCard key={curElem.id} curElem={curElem}/>;
         })}
        </ul>
     );
