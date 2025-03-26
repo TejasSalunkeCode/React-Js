@@ -10,7 +10,7 @@
                     <strong>Hi Alice, have a wonderful day !</strong>
                 </div>
             }
-            
+
             >
             <p>Hobbies: Reading,Hiking</p>
             <button>Contact</button>
@@ -32,7 +32,6 @@
         </div>
     );
 }
-
 export default Profile;
 
 function ProfileCard(props){
