@@ -10,7 +10,6 @@
                     <strong>Hi Alice, have a wonderful day !</strong>
                 </div>
             }
-
             >
             <p>Hobbies: Reading,Hiking</p>
             <button>Contact</button>
