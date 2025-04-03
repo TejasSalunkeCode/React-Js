@@ -84,6 +84,7 @@ button:focus-visible {
    within the app */
 
 /* base rule */
+
 * {
   margin: 0;
   padding: 0;
@@ -160,6 +161,18 @@ a {
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* .grid-three--cols {
+  grid-template-columns: repeat(3, 1fr);
+} */
+
 .grid-three-cols {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+
+
+
+
+
+
+

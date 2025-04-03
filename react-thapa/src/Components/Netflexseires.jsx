@@ -69,10 +69,10 @@
 
 // import { SeriesCard } from "./SeriesCard";
 import seriesData from "../api/seriesData.json";
-import { SeriesCard } from "./SeriesCard"
+import { SeriesCard } from "./SeriesCard";
 const Netflexseires =  () =>{
     return(
-       <ul className="grid grid-three--cols">
+       <ul className="grid grid-three-cols">
         {seriesData.map((curElem)=>{
         return <SeriesCard key={curElem.id} data={curElem}/>;
         })}
