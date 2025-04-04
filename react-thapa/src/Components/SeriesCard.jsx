@@ -36,9 +36,7 @@ export const SeriesCard = (props) => {
                 />
             </div>
 
-
-
-            <div className="flex flex-col gap-6 px-6">
+            <div className="card-content">
             <h2>Name : {name}</h2>
                     <h3>{rating}</h3>
                     <p>{summary}</p>  

@@ -1,5 +1,6 @@
-import AccordionExample13 from "../../src/app/multi-ui/components/examples/Accordian_13_Example";
-import Netflexseires from "./Components/Netflexseires";
+
+import { EventHandling } from "./Components/EventHandling";
+// import Netflexseires from "./Components/Netflexseires";
 import "./Components/Netflix.css";
 import Accordion from "./Tejas";
 export const App = () =>{
@@ -13,10 +14,16 @@ export const App = () =>{
         // <Netflexseires/>
         // <Netflexseires/> */}
         //     </>
+
+
+
+
         <section className="container">
-{/* <AccordionExample13/> */}
-            <h1 className="card-heading">List of best</h1>
-            <Netflexseires/>
+            {/* <h1 className="card-heading">List of best</h1> */}
+            {/* <Netflexseires/> */}
+            <EventHandling/>
         </section>
+
+        
     );
 }                               
