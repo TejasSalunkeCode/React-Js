@@ -16,6 +16,7 @@ export const EventHandling = () =>{
     }
     return(
         <>
+        
             <button onClick={handleButtonClick} style={{backgroundColor:"red"}}>Click Me</button>
             <br/>
             <button onClick={(event)=>handleButtonClick(event)} style={{backgroundColor:"yellow"}}>Click me 2</button>
