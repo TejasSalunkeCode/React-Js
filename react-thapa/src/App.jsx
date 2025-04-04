@@ -2,7 +2,8 @@
 // import { EventHandling } from "./Components/EventHandling";
 // import Netflexseires from "./Components/Netflexseires";
 // import {EventProps} from "./Components/EventProps";
-import {EventPropagation} from "./Components/EventPropagation";
+// import {EventPropagation} from "./Components/EventPropagation";
+import {State} from "./Components/hooks/State"
 // import "./Components/Netflix.css";
 // import Accordion from "./Tejas";
 export const App = () =>{
@@ -25,7 +26,8 @@ export const App = () =>{
             {/* <Netflexseires/> */}
             {/* <EventHandling/> */}
             {/* <EventProps/> */}
-            <EventPropagation/>
+            {/* <EventPropagation/> */}
+            <State/>
         </section>
 
         
