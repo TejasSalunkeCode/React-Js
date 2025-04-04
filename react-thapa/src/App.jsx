@@ -1,6 +1,7 @@
 
 import { EventHandling } from "./Components/EventHandling";
 // import Netflexseires from "./Components/Netflexseires";
+import {EventProps} from "./Components/EventProps";
 import "./Components/Netflix.css";
 import Accordion from "./Tejas";
 export const App = () =>{
@@ -22,6 +23,7 @@ export const App = () =>{
             {/* <h1 className="card-heading">List of best</h1> */}
             {/* <Netflexseires/> */}
             <EventHandling/>
+            <EventProps/>
         </section>
 
         
