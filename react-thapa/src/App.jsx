@@ -4,7 +4,12 @@
 // import {EventProps} from "./Components/EventProps";
 // import {EventPropagation} from "./Components/EventPropagation";
 
-import { DerivedState } from "./Components/hooks/DeriedState";
+import { ToggleSwitch } from "./Components/Projects/ToggleSwitch/ToggleSwitch";
+
+// import { DerivedState } from "./Components/hooks/DeriedState";
+// import { LiftStateUp } from "./Components/LiftStateUp";
+
+
 
 // import {State} from "./Components/hooks/State"
 // import "./Components/Netflix.css";
@@ -29,7 +34,9 @@ export const App = () =>{
             {/* <EventProps/> */}
             {/* <EventPropagation/> */}
             {/* <State/> */}
-           <DerivedState/>
+           {/* <DerivedState/> */}
+           {/* <LiftStateUp/> */}
+            <ToggleSwitch/>
         </section>
 
         

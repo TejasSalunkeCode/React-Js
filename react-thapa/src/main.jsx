@@ -10,7 +10,7 @@ import { EventHandling } from './Components/EventHandling.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    <EventHandling/>
+    {/* <EventHandling/> */}
     {/* <Practices /> */}
     {/* <Profile/> */}
   </StrictMode>
