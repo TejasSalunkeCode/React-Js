@@ -4,7 +4,8 @@
 // import {EventProps} from "./Components/EventProps";
 // import {EventPropagation} from "./Components/EventPropagation";
 
-import { ToggleSwitch } from "./Components/Projects/ToggleSwitch/ToggleSwitch";
+import { Todoo } from "./Components/Projects/ToggleSwitch/TodoList/Todoo";
+// import { ToggleSwitch } from "./Components/Projects/ToggleSwitch/ToggleSwitch";
 
 // import { DerivedState } from "./Components/hooks/DeriedState";
 // import { LiftStateUp } from "./Components/LiftStateUp";
@@ -36,7 +37,8 @@ export const App = () =>{
             {/* <State/> */}
            {/* <DerivedState/> */}
            {/* <LiftStateUp/> */}
-            <ToggleSwitch/>
+            {/* <ToggleSwitch/> */}
+            <Todoo/>
         </section>
 
         
