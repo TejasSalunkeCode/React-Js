@@ -49,6 +49,7 @@
   form {
     display: flex;
     font-size: 1.7rem;
+    color: black;
     justify-content: center;
     margin: 15px 0;
     padding: 0.8rem;
@@ -94,7 +95,7 @@
   }
   
   form button {
-    padding: 10.8px;
+    padding: 16.8px;
     font-size: 17px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;

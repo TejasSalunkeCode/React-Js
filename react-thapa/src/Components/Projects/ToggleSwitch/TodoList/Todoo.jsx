@@ -1,9 +1,12 @@
 import { useState } from "react";
 import "./Todo.css";
+import { FaCheck } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
 // import { events } from "multi-ui-cli/models/Component";
 export const Todoo=()=>{
     const [inputValue,setInputValue]=useState("");
     const [task,setTask]=useState([]);
+    const [datetime,setDateTime]=useState("");
     const handleInputChange=(value)=>{
         setInputValue(value);
     };
@@ -20,11 +23,20 @@ export const Todoo=()=>{
         setTask((prev)=>[...prev,inputValue])
 
         setInputValue("");
-    }
+    };
+    
+    setInterval(()=>{
+        const now = new Date();
+        const formattedDate=now.toLocaleDateString();
+        const time=now.toLocaleTimeString();
+        
+        setDateTime(`${formattedDate} ${time}`)
+    },1000)
     return(
-        <section>
+        <section className="todo-container">
             <header>
                 <h1>Todo List</h1>
+                <h2 className="date-time">{datetime}</h2>
             </header>
             <section className="form">
                 <form onSubmit={handleForSubmit}>
@@ -42,8 +54,8 @@ export const Todoo=()=>{
                         return(
                             <li key={index} className="todo-item">
                                 <span>{curTask}</span>
-                                <button className="check-btn"></button>
-                                <button className="delete-btn"></button>
+                                <button className="check-btn"><FaCheck /></button>
+                                <button className="delete-btn"><MdDelete /></button>
                             </li>
                         )
                     })}
