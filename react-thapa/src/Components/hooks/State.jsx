@@ -1,6 +1,4 @@
 import { useState } from "react";
-
-
 export const State=()=>{
     // let value=0;
     // const handleButtonClick=()=>{
