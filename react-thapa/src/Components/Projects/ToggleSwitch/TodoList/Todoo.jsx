@@ -30,6 +30,7 @@ export const Todoo=()=>{
         const formattedDate=now.toLocaleDateString();
         const time=now.toLocaleTimeString();
         
+        
         setDateTime(`${formattedDate} ${time}`)
     },1000)
     return(
