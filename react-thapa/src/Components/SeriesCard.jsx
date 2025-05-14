@@ -38,7 +38,9 @@ export const SeriesCard = (props) => {
 
             <div className="card-content">
             <h2>Name : {name}</h2>
-                    <h3>{rating}</h3>
+                    <h3>Rating : 
+                    <span className={`rating ${rating >= 8.5 ? "supehit" : "average"}`}></span>
+                    </h3>
                     <p>{summary}</p>  
                     <p className="text-3xl font-bold underline">"Genere : "{genre}</p>   
                     <p>Cast: {Cast}</p>
