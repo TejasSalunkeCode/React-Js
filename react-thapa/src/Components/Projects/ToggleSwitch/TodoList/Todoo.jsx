@@ -29,10 +29,24 @@ export const Todoo=()=>{
         const now = new Date();
         const formattedDate=now.toLocaleDateString();
         const time=now.toLocaleTimeString();
-        
+        // console.log("heyy")
         
         setDateTime(`${formattedDate} ${time}`)
     },1000)
+
+
+    const tododelete=(value)=>{
+        console.log(task);
+        console.log(value);
+        const updatetask=task.filter((curTask)=>curTask!=value);
+        setTask(updatetask);
+    }
+
+   const cleardata=()=>{
+    
+    setTask([""]);
+   }
+
     return(
         <section className="todo-container">
             <header>
@@ -58,13 +72,16 @@ export const Todoo=()=>{
                             <li key={index} className="todo-item">
                                 <span>{curTask}</span>
                                 <button className="check-btn"><FaCheck /></button>
-                                <button className="delete-btn"><MdDelete /></button>
+                                <button className="delete-btn" onClick={()=>tododelete(curTask)}><MdDelete /></button>
                             </li>
                         )
                     })}
                     
                 </ul>
             </section>
+          <section>
+              <button className="clear-btn" onClick={cleardata}>Clear All</button>
+          </section>
         </section>
     );
 };

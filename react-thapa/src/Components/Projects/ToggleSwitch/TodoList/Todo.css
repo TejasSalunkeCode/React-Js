@@ -194,3 +194,7 @@
   .clear-btn:hover {
     background-color: #8d1407;
   }
+  h1,h2{
+    margin-bottom: 10px;  /* Reduces the space below the heading */
+  margin-top: 5px;
+  }
