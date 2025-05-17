@@ -3,9 +3,16 @@ import "./Todo.css";
 import { FaCheck } from "react-icons/fa";
 import { MdDelete } from "react-icons/md";
 // import { events } from "multi-ui-cli/models/Component";
+const todokey="reacttodo";
 export const Todoo=()=>{
     const [inputValue,setInputValue]=useState("");
-    const [task,setTask]=useState([]);
+
+    // const getLocalStorag=()=>{
+    //     const rawtodo=localStorage.getItem(todokey);
+    //     if(!rawtodo) return [];
+    //     return JSON.parse(rawtodo)
+    // }
+    const [task,setTask]=useState(/*()=>getLocalStorag()*/[]);
     const [datetime,setDateTime]=useState("");
     const handleInputChange=(value)=>{
         setInputValue(value);
@@ -44,8 +51,10 @@ export const Todoo=()=>{
 
    const cleardata=()=>{
     
-    setTask([""]);
+    setTask([]);
    }
+
+   localStorage.setItem(todokey,JSON.stringify(task));
 
     return(
         <section className="todo-container">
