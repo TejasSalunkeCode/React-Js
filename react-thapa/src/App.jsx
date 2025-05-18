@@ -1,10 +1,10 @@
 
 // import { EventHandling } from "./Components/EventHandling";
-import Netflexseires from "./Components/Netflexseires";
+// import Netflexseires from "./Components/Netflexseires";
 // import {EventProps} from "./Components/EventProps";
 // import {EventPropagation} from "./Components/EventPropagation";
-
-import {Counter} from "./Components/hooks/UseState/indexxx";
+import {RegisteratonFrom} from "./Components/hooks/UseState/Registration";
+// import {Counter} from "./Components/hooks/UseState/indexxx";
 // import { Todoo } from "./Components/Projects/ToggleSwitch/TodoList/Todoo";
 // import { ToggleSwitch } from "./Components/Projects/ToggleSwitch/ToggleSwitch";
 
@@ -40,7 +40,8 @@ export const App = () =>{
            {/* <LiftStateUp/> */}
             {/* <ToggleSwitch/> */}
             {/* <Todoo/> */}
-            <Counter/>
+            {/* <Counter/> */}
+            <RegisteratonFrom/>
         </section>
 
         

@@ -32,7 +32,7 @@ export const Counter=()=>{
         console.log(value2);
         
     }
-
+//   localStorage.setItem("Form-Info",JSON.stringify(FormData))
     return(
         <div className="container state-container" style={{textAlign:"center"}}>
             <h1>useState Hook!</h1>
