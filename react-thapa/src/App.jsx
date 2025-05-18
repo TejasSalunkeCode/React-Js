@@ -4,7 +4,8 @@ import Netflexseires from "./Components/Netflexseires";
 // import {EventProps} from "./Components/EventProps";
 // import {EventPropagation} from "./Components/EventPropagation";
 
-import { Todoo } from "./Components/Projects/ToggleSwitch/TodoList/Todoo";
+import {Counter} from "./Components/hooks/UseState/indexxx";
+// import { Todoo } from "./Components/Projects/ToggleSwitch/TodoList/Todoo";
 // import { ToggleSwitch } from "./Components/Projects/ToggleSwitch/ToggleSwitch";
 
 // import { DerivedState } from "./Components/hooks/DeriedState";
@@ -38,7 +39,8 @@ export const App = () =>{
            {/* <DerivedState/> */}
            {/* <LiftStateUp/> */}
             {/* <ToggleSwitch/> */}
-            <Todoo/>
+            {/* <Todoo/> */}
+            <Counter/>
         </section>
 
         
