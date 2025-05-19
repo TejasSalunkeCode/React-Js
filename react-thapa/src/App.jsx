@@ -13,8 +13,8 @@
 // import { DerivedState } from "./Components/hooks/DeriedState";
 // import { LiftStateUp } from "./Components/LiftStateUp";
 // import {ContactForm} from "./Components/hooks/UseState/contactForm"
-import {ReactUseEffect} from "./Components/hooks/UseEffect/index"
-
+// import {ReactUseEffect} from "./Components/hooks/UseEffect/index"
+import {Challange} from "./Components/hooks/UseEffect/EffectChallange"
 // import {State} from "./Components/hooks/State"
 // import "./Components/Netflix.css";
 export const App = () =>{
@@ -48,7 +48,8 @@ export const App = () =>{
            {/* <Loginformm/> */}
            {/* <Loginformm2/> */}
             {/* <ContactForm/> */}
-            <ReactUseEffect/>
+            {/* <ReactUseEffect/> */}
+            <Challange/>
 
         </section>
 
