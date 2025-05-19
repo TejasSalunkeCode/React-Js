@@ -9,10 +9,10 @@
 // import {Counter} from "./Components/hooks/UseState/indexxx";
 // import { Todoo } from "./Components/Projects/ToggleSwitch/TodoList/Todoo";
 // import { ToggleSwitch } from "./Components/Projects/ToggleSwitch/ToggleSwitch";
-import { Loginformm2 } from "./Components/hooks/UseState/loginform2";
+// import { Loginformm2 } from "./Components/hooks/UseState/loginform2";
 // import { DerivedState } from "./Components/hooks/DeriedState";
 // import { LiftStateUp } from "./Components/LiftStateUp";
-
+import {ContactForm} from "./Components/hooks/UseState/contactForm"
 
 
 // import {State} from "./Components/hooks/State"
@@ -46,7 +46,9 @@ export const App = () =>{
             {/* <RegisteratonFrom/> */}
            {/* <RegistrationFromReact/> */}
            {/* <Loginformm/> */}
-           <Loginformm2/>
+           {/* <Loginformm2/> */}
+            <ContactForm/>
+
         </section>
 
         
