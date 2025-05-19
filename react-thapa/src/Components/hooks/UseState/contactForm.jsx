@@ -7,7 +7,7 @@ export const ContactForm = () => {
         message:""
     });
 
-    
+
     const handleinput=(e)=>{
         const{name,value}=e.target;
         userInfo((prev)=>({...prev,[name]:value}))
@@ -16,6 +16,7 @@ export const ContactForm = () => {
         e.preventDefault();
         console.log(user)
     }
+    
     return (
         <div className="contact-form-container">
             <h2>Contact Us</h2>
