@@ -5,11 +5,11 @@
 // import {EventPropagation} from "./Components/EventPropagation";
 // import {RegisteratonFrom} from "./Components/hooks/UseState/Registration";
 // import {RegistrationFromReact} from "./Components/hooks/UseState/RegistrationFromReact"
-import {Loginformm} from "./Components/hooks/UseState/Loginform"
+// import {Loginformm} from "./Components/hooks/UseState/Loginform"
 // import {Counter} from "./Components/hooks/UseState/indexxx";
 // import { Todoo } from "./Components/Projects/ToggleSwitch/TodoList/Todoo";
 // import { ToggleSwitch } from "./Components/Projects/ToggleSwitch/ToggleSwitch";
-
+import { Loginformm2 } from "./Components/hooks/UseState/loginform2";
 // import { DerivedState } from "./Components/hooks/DeriedState";
 // import { LiftStateUp } from "./Components/LiftStateUp";
 
@@ -45,7 +45,8 @@ export const App = () =>{
             {/* <Counter/> */}
             {/* <RegisteratonFrom/> */}
            {/* <RegistrationFromReact/> */}
-           <Loginformm/>
+           {/* <Loginformm/> */}
+           <Loginformm2/>
         </section>
 
         
