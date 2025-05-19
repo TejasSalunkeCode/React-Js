@@ -12,8 +12,8 @@
 // import { Loginformm2 } from "./Components/hooks/UseState/loginform2";
 // import { DerivedState } from "./Components/hooks/DeriedState";
 // import { LiftStateUp } from "./Components/LiftStateUp";
-import {ContactForm} from "./Components/hooks/UseState/contactForm"
-
+// import {ContactForm} from "./Components/hooks/UseState/contactForm"
+import {ReactUseEffect} from "./Components/hooks/UseEffect/index"
 
 // import {State} from "./Components/hooks/State"
 // import "./Components/Netflix.css";
@@ -47,7 +47,8 @@ export const App = () =>{
            {/* <RegistrationFromReact/> */}
            {/* <Loginformm/> */}
            {/* <Loginformm2/> */}
-            <ContactForm/>
+            {/* <ContactForm/> */}
+            <ReactUseEffect/>
 
         </section>
 
