@@ -15,9 +15,10 @@
 // import {ContactForm} from "./Components/hooks/UseState/contactForm"
 // import {ReactUseEffect} from "./Components/hooks/UseEffect/index"
 // import {Challange} from "./Components/hooks/UseEffect/EffectChallange"
-import {Cleanup} from "./Components/hooks/UseEffect/CleanUp"
+// import {Cleanup} from "./Components/hooks/UseEffect/CleanUp"
 // import {State} from "./Components/hooks/State"
 // import "./Components/Netflix.css";
+import "./Components/hooks/UseEffect/HowNotToFectchApi"
 export const App = () =>{
     return (                
         //  <>  
@@ -51,7 +52,8 @@ export const App = () =>{
             {/* <ContactForm/> */}
             {/* <ReactUseEffect/> */}
             {/* <Challange/> */}
-            <Cleanup/>
+            {/* <Cleanup/> */}
+            <HowNotToFetchApli />
             
 
 

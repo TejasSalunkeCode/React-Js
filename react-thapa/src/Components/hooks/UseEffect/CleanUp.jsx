@@ -7,6 +7,8 @@ export const Cleanup=()=>{
     useEffect(()=>{
         const timer=setInterval(()=>{
             setCount((prev)=>prev+1)
+            // console.log(count);
+            
         },1000)
 
         return ()=> clearInterval(timer)
