@@ -18,7 +18,8 @@
 // import {Cleanup} from "./Components/hooks/UseEffect/CleanUp"
 // import {State} from "./Components/hooks/State"
 // import "./Components/Netflix.css";
-import "./Components/hooks/UseEffect/HowNotToFectchApi"
+import { HowNotToFetchApli } from "./Components/hooks/UseEffect/HowNotToFectchApi";
+
 export const App = () =>{
     return (                
         //  <>  
