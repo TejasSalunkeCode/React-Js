@@ -18,7 +18,8 @@
 // import {Cleanup} from "./Components/hooks/UseEffect/CleanUp"
 // import {State} from "./Components/hooks/State"
 // import "./Components/Netflix.css";
-import { HowNotToFetchApli } from "./Components/hooks/UseEffect/HowNotToFectchApi";
+// import { HowNotToFetchApli } from "./Components/hooks/UseEffect/HowNotToFectchApi";
+import {Useref} from "./Components/hooks/useRef/index";
 
 export const App = () =>{
     return (                
@@ -54,8 +55,8 @@ export const App = () =>{
             {/* <ReactUseEffect/> */}
             {/* <Challange/> */}
             {/* <Cleanup/> */}
-            <HowNotToFetchApli />
-            
+            {/* <HowNotToFetchApli /> */}
+            <Useref/>
             
 
 
