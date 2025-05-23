@@ -28,7 +28,9 @@
 // import { About } from "./Components/hooks/ContextApi/About";
 // import { Services } from "./Components/hooks/ContextApi/serVices";
 
-import {DarkLight,ThemeProvider} from "./Components/hooks/ContextApi/DarkLight";
+// import {DarkLight,ThemeProvider} from "./Components/hooks/ContextApi/DarkLight";
+import {ReducerComp} from "./Components/hooks/useReducer/index";
+
 export const App = () =>{
     return ( 
            
@@ -72,7 +74,7 @@ export const App = () =>{
             {/* <AfterReactv/> */}
             {/* <UseId/> */}
             {/* <ParentComponent/> */}
-            <>
+            {/* <> */}
 
                {/* <BioProvider>
                     <Home/>
@@ -80,10 +82,12 @@ export const App = () =>{
                 <Services/>
                 </BioProvider> */}
 
-                <ThemeProvider>
+                {/* <ThemeProvider>
                     <DarkLight/>
-                </ThemeProvider>
-            </>
+                </ThemeProvider> */}
+            {/* </> */}
+            <ReducerComp/>
+
 
 
 
