@@ -26,6 +26,7 @@
 import { BioProvider } from "./Components/hooks/ContextApi/index";
 import { Home } from "./Components/hooks/ContextApi/Home";
 import { About } from "./Components/hooks/ContextApi/About";
+import { Services } from "./Components/hooks/ContextApi/serVices";
 export const App = () =>{
     return ( 
            
@@ -69,10 +70,14 @@ export const App = () =>{
             {/* <AfterReactv/> */}
             {/* <UseId/> */}
             {/* <ParentComponent/> */}
+            <>
+
                <BioProvider>
                     <Home/>
                     <About/>
+                <Services/>
                 </BioProvider>
+            </>
 
 
 

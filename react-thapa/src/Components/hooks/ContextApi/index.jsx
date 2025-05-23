@@ -1,5 +1,6 @@
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 // import { useContext } from "react";
+
 export const BioContext=createContext();
 
 export const BioProvider=({children })=>{
@@ -10,3 +11,13 @@ export const BioProvider=({children })=>{
     return <BioContext.Provider value={{myName,age}}>{children }</BioContext.Provider>
     
 };
+
+//custom hooks
+
+export const useBioContext=()=>{
+    const context=useContext(BioContext);
+    if(context===undefined){
+        throw new Error("Component must be wrapped with BioProvider");
+    }
+    return context;
+}
