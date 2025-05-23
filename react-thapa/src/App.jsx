@@ -21,10 +21,17 @@
 // import { HowNotToFetchApli } from "./Components/hooks/UseEffect/HowNotToFectchApi";
 // import {Useref} from "./Components/hooks/useRef/index";
 // import {AfterReactv} from "./Components/hooks/useRef/forwardRef"
-import {UseId} from "./Components/hooks/UseId/index";
-
+// import {UseId} from "./Components/hooks/UseId/index";
+// import {ParentComponent} from "./Components/PropDrilling"
+import { BioProvider } from "./Components/hooks/ContextApi/index";
+import { Home } from "./Components/hooks/ContextApi/Home";
+import { About } from "./Components/hooks/ContextApi/About";
 export const App = () =>{
-    return (                
+    return ( 
+           
+          
+            
+                           
         //  <>  
         // {/* <Netflexseires/> */}
         // {/* <Netflexseires/>
@@ -60,8 +67,12 @@ export const App = () =>{
             {/* <HowNotToFetchApli /> */}
             {/* <Useref/> */}
             {/* <AfterReactv/> */}
-            <UseId/>
-            
+            {/* <UseId/> */}
+            {/* <ParentComponent/> */}
+               <BioProvider>
+                    <Home/>
+                    <About/>
+                </BioProvider>
 
 
 
