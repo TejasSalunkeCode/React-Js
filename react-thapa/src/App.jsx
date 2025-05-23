@@ -23,10 +23,12 @@
 // import {AfterReactv} from "./Components/hooks/useRef/forwardRef"
 // import {UseId} from "./Components/hooks/UseId/index";
 // import {ParentComponent} from "./Components/PropDrilling"
-import { BioProvider } from "./Components/hooks/ContextApi/index";
-import { Home } from "./Components/hooks/ContextApi/Home";
-import { About } from "./Components/hooks/ContextApi/About";
-import { Services } from "./Components/hooks/ContextApi/serVices";
+// import { BioProvider } from "./Components/hooks/ContextApi/index";
+// import { Home } from "./Components/hooks/ContextApi/Home";
+// import { About } from "./Components/hooks/ContextApi/About";
+// import { Services } from "./Components/hooks/ContextApi/serVices";
+
+import {DarkLight,ThemeProvider} from "./Components/hooks/ContextApi/DarkLight";
 export const App = () =>{
     return ( 
            
@@ -72,11 +74,15 @@ export const App = () =>{
             {/* <ParentComponent/> */}
             <>
 
-               <BioProvider>
+               {/* <BioProvider>
                     <Home/>
                     <About/>
                 <Services/>
-                </BioProvider>
+                </BioProvider> */}
+
+                <ThemeProvider>
+                    <DarkLight/>
+                </ThemeProvider>
             </>
 
 
