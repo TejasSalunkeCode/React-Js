@@ -1,6 +1,5 @@
 import { useState } from "react"
 import {Count}  from "./MemoCount"; // Adjust the path if needed
-
 export const ReactMemo=()=>{
     const[count,setCount]=useState(0);
     return(
