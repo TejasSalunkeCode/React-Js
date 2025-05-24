@@ -29,7 +29,9 @@
 // import { Services } from "./Components/hooks/ContextApi/serVices";
 
 // import {DarkLight,ThemeProvider} from "./Components/hooks/ContextApi/DarkLight";
-import {ReducerComp} from "./Components/hooks/useReducer/index";
+// import {ReducerComp} from "./Components/hooks/useReducer/index";
+import {ReactMemo} from "./Components/hooks/Memo/ReactMemo"
+// import {Count} from "./Components/hooks/Memo/MemoCount"
 
 export const App = () =>{
     return ( 
@@ -86,7 +88,9 @@ export const App = () =>{
                     <DarkLight/>
                 </ThemeProvider> */}
             {/* </> */}
-            <ReducerComp/>
+            {/* <ReducerComp/> */}
+            <ReactMemo/>
+            {/* <Count/> */}
 
 
 
