@@ -30,9 +30,9 @@
 
 // import {DarkLight,ThemeProvider} from "./Components/hooks/ContextApi/DarkLight";
 // import {ReducerComp} from "./Components/hooks/useReducer/index";
-// import {ReactMemo} from "./Components/hooks/Memo/ReactMemo"
-// import {Count} from "./Components/hooks/Memo/MemoCount"
-import MemoParentComponent from "./Components/hooks/Memo/UseMemo";
+import {ReactMemo} from "./Components/hooks/Memo/ReactMemo"
+import {Count} from "./Components/hooks/Memo/MemoCount"
+// import MemoParentComponent from "./Components/hooks/Memo/UseMemo";
 export const App = () =>{
     return ( 
            
@@ -89,10 +89,9 @@ export const App = () =>{
                 </ThemeProvider> */}
             {/* </> */}
             {/* <ReducerComp/> */}
-            {/* <ReactMemo/> */}
+            <ReactMemo/>
             {/* <Count/> */}
-                    {/* <ExpensiveComponent/> */}
-                    <MemoParentComponent/>
+                    {/* <MemoParentComponent/> */}
 
 
 
