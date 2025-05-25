@@ -95,8 +95,6 @@ export const App = () =>{
                     {/* <MemoParentComponent/> */}
                 <UseCallback/>
 
-
-
         </section>
 
         
