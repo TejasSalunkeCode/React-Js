@@ -26,12 +26,17 @@ export const Header = () => {
                     <nav className="navbar">
                         <ul>
                             <li className="nav-item">
-                                <NavLink to="/" className="nav-link">
+                                <NavLink to="/" className={({isActive})=>isActive ? "nav-link active-link" : "nav-link"}>
                                     Home
                                 </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink to="/about" className="nav-link">
+                                <NavLink to="/about" 
+                                style={({isActive})=>{
+                                    return{
+                                        color:isActive ? "red" : "black",
+                                    };
+                                }}>
                                     About
                                 </NavLink>
                             </li>
