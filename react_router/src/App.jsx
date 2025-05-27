@@ -10,6 +10,7 @@ import { getMoviesData } from "./API/GetApiData";
 // import { Route } from "react-router-dom";
 import {MovieDetailss} from "./Components/Layout/UI/MovieDetailss"
 import { getdetails } from "./API/GetMovieDetails";
+import {contactData} from "./pages/Contact";
  const APP=()=>{
 
   const router=createBrowserRouter([
@@ -43,7 +44,8 @@ import { getdetails } from "./API/GetMovieDetails";
     },
     {
       path:"/contact",
-      element:<Contact/>
+      element:<Contact/>,
+      action:contactData,
     },
     // {
     //   path:"*",

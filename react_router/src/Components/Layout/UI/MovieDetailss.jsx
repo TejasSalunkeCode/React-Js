@@ -22,8 +22,8 @@ export const MovieDetailss = () => {
                             {Title}
                             </h4>
                             {/* <p>{Plot}</p> */}
-                            <p className="ticket_current_price">Type :</p>
-                            <p className="ticket_current_price">Type :</p>
+                            <p className="ticket_current_price">Year :{Year}</p>
+                            {/* <p className="ticket_current_price">Type :</p> */}
                             <button className="ticket_buy-btn">Watch Now</button>
                         </div>
                     </div>
