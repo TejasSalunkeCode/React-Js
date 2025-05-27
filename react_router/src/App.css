@@ -297,21 +297,20 @@ textarea:focus-visible {
 main {
   /* height: 84vh; */
       overflow: auto;
-    /* padding-top: 100px; */
-        padding-top: 146px;
+    padding-top: 100px;
+        /* padding-top: 146px; */
 
     height: 111vh;
   position: relative;
-  background-color: #d9e9ff;
-
-  background-image: linear-gradient(
+  background-color: #dedcec;
+  /* background-image: linear-gradient(
     to top right,
     #3d86fa,
     #4484fb,
     #679eff,
     #b3d2ff,
     #ebf3fe
-  );
+  ); */
 }
 
 .custom-shape-divider-bottom-1696038172 {

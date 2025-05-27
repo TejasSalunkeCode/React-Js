@@ -9,7 +9,7 @@ export const MovieDetailss = () => {
 
      const{Actor,Poster,Title,Type,Year,Plot,BoxOffice,imdbID}=moviedata2;
 
-
+    console.log(imdbID);
     return (
         <li className="hero-container hero-movie-container">
             <div className="main-container">

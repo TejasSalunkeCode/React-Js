@@ -21,7 +21,7 @@ import {contactData} from "./pages/Contact";
       children :[
  
     {
-      path:"/home",
+      path:"/",
       element:<Home/>
     },
     {
