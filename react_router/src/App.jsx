@@ -8,7 +8,8 @@ import "./App.css";
 import { ErrorPage } from "./pages/ErrorPage";
 import { getMoviesData } from "./API/GetApiData";
 // import { Route } from "react-router-dom";
-
+import {MovieDetailss} from "./Components/Layout/UI/MovieDetailss"
+import { getdetails } from "./API/GetMovieDetails";
  const APP=()=>{
 
   const router=createBrowserRouter([
@@ -33,6 +34,12 @@ import { getMoviesData } from "./API/GetApiData";
       element:<Movie/>,
       loader:getMoviesData,
       
+    },
+      {
+      path:"/movie/:movieID",
+      element:<MovieDetailss/>,
+      loader :getdetails,
+
     },
     {
       path:"/contact",
