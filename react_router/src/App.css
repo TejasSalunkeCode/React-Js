@@ -292,7 +292,10 @@ textarea:focus-visible {
 /***** Hero Section *****/
 
 main {
-  height: 84vh;
+  /* height: 84vh; */
+      overflow: auto;
+    padding-top: 100px;
+    height: 111vh;
   position: relative;
   background-color: #d9e9ff;
 
