@@ -6,6 +6,7 @@ import { Contact } from "./pages/Contact";
 import AppLayout from "./Components/Layout/AppLayout";
 import "./App.css";
 import { ErrorPage } from "./pages/ErrorPage";
+import { getMoviesData } from "./API/GetApiData";
 // import { Route } from "react-router-dom";
 
  const APP=()=>{
@@ -29,7 +30,9 @@ import { ErrorPage } from "./pages/ErrorPage";
 
     {
       path:"/movie",
-      element:<Movie/>
+      element:<Movie/>,
+      loader:getMoviesData,
+      
     },
     {
       path:"/contact",
