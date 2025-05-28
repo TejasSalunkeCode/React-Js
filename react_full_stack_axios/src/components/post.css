@@ -1,0 +1,119 @@
+/* Background and layout */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a;
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+.section-post {
+  padding: 2rem;
+}
+
+.section-post ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+/* Header with input fields and button */
+.post-header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.header-input {
+  flex: 1;
+  margin-right: 1rem;
+  padding: 0.5rem 0.75rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #334155;
+  color: #f1f5f9;
+  font-size: 1rem;
+  outline: none;
+}
+
+.header-input:last-of-type {
+  margin-right: 1rem;
+}
+
+.header-button {
+  padding: 0.5rem 1rem;
+  background-color: #14b8a6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.header-button:hover {
+  transform: scale(1.05);
+}
+
+/* Post Card Styling */
+.post-card {
+  background-color: #1e293b;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border-left: 4px solid #38bdf8;
+}
+
+.post-id {
+  font-weight: bold;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+
+.post-title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.post-body {
+  margin-bottom: 1rem;
+  color: #cbd5e1;
+}
+
+/* Button Styles */
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.edit {
+  background-color: #10b981;
+  color: white;
+}
+
+.delete {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
