@@ -18,3 +18,8 @@ export const deletePost=(id)=>{
 export const postdata=(post)=>{
     return api.post("/posts",post);
 }
+
+//put meathod
+export const updateData=(id,post)=>{
+    return api.put(`/posts/${id}`,post);
+}

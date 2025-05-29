@@ -205,7 +205,7 @@
 
 
 import { useEffect, useState } from "react";
-import { deletePost, getPost, postdata } from "../api/PostApi";
+import { deletePost, getPost, postdata, updateData } from "../api/PostApi";
 import "./post.css"; // Make sure post.css exists and is in the correct path
 
 export const Posts = () => {
@@ -215,6 +215,8 @@ export const Posts = () => {
     body: "",
   });
   const[updateApi,setUpdateApi]=useState({});
+
+  let isEmpty=Object.keys(updateApi).length===0;
 
   // Fetch posts from API
   const getPostData = async () => {
@@ -261,10 +263,39 @@ export const Posts = () => {
     }
   };
 
+  const updatPostData=async()=>{
+    try{
+      const res=await updateData(updateApi.id,addData);
+      console.log(res);
+      if(res.status===200){
+        setData((prev)=>{
+          return prev.map((curEle)=>{
+            return curEle.id===updateApi.id ? res.data : curEle;
+          });
+        
+        })
+        setAddData({ title: "", body: "" }); 
+      setUpdateApi({});
+
+      }
+
+    }catch({error}){
+      console.log(error);
+      
+    }
+     
+
+  };
+
   // Handle form submission
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    addPostData();
+    const action=e.nativeEvent.submitter.value;
+    if(action==="Add"){
+      addPostData();
+    }else if(action==="Edit"){
+      updatPostData();
+    }
   };
   const handleUpdatePost=(curEle)=>setUpdateApi(curEle);
 
@@ -306,8 +337,7 @@ export const Posts = () => {
             value={addData.body}
             onChange={handleInputChange}
           />
-          <button className="header-button" type="submit">
-            ADD
+          <button className="header-button" type="submit" value={isEmpty ? "Add" : "Edit"}>{isEmpty ? "Add" : "Edit"}
           </button>
         </div>
       </form>
