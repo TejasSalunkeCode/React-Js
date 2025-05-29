@@ -17,7 +17,7 @@ export const Accordion=()=>{
 
     return(
         <>
-            <h1>The Accordion</h1>
+            <h1>The Accordios+n</h1>
             <ul className="section-accordion">
                 {
                     data.map((curElem)=>{
