@@ -36,12 +36,25 @@ console.log(store);
 console.log("intial State ",store.getState());
 
 
-store.dispatch({type:ADD_TASK,payload : "Buy 1"})
+// store.dispatch({type:ADD_TASK,payload : "Buy 1"})
+store.dispatch(addTask("Buy 1"))
 console.log("Updated State ",store.getState());
 
 
-store.dispatch({type:ADD_TASK,payload : "Buy mango"})
+store.dispatch(addTask("Buy mango"))
 console.log("Updated State 2",store.getState());
 
-store.dispatch({type:DELETE_TASK,payload:1})
+// store.dispatch({type:DELETE_TASK,payload:1})
+store.dispatch(deleteTask(1))
 console.log("Updated State 2",store.getState());
+
+
+
+const addTask=(data)=>{
+    return store.dispatch({type:ADD_TASK,payload :data});
+}
+
+
+const deleteTask=(id)=>{
+    return store.dispatch({type:ADD_TASK,payload :id});
+}
