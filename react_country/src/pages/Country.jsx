@@ -34,17 +34,18 @@
 
 
 
-
-
-
 import { useEffect, useState, useTransition } from "react";
 import { getCountryData } from "../api/PostApi";
-import { Loading } from "../components'/UI/Loader"; // Also fix the typo in path
-import { CountryCard } from "../../src/components'/Layout/CountryCard"; // Make sure this is imported too
+import { Loading } from "../components'/UI/Loader";
+import { CountryCard } from "../../src/components'/Layout/CountryCard";
+import { SearchFilter } from "../components'/UI/SearchFilter";
 
 export const Country = () => {
   const [isPending, startTransition] = useTransition();
   const [countries, setCountries] = useState([]);
+
+  const [search, setSearch] = useState(""); // default to empty string
+  const [filter, setFilter] = useState("all");
 
   useEffect(() => {
     startTransition(async () => {
@@ -54,11 +55,29 @@ export const Country = () => {
   }, []);
 
   if (isPending) return <Loading />;
+  const filteredCountries = countries.filter((country) => {
+    const matchSearch = search
+      ? country.name.common.toLowerCase().includes(search.toLowerCase())
+      : true;
+
+    const matchRegion = filter === "all" ? true : country.region === filter;
+
+    return matchSearch && matchRegion;
+  });
 
   return (
     <section className="country-section">
+      <SearchFilter
+        search={search}
+        setSearch={setSearch}
+        filter={filter}
+        setFilter={setFilter}
+        countries={countries}
+        setCountries={setCountries}
+      />
+
       <ul className="grid grid-four-cols">
-        {countries.map((curCountry, index) => (
+        {filteredCountries.map((curCountry, index) => (
           <CountryCard country={curCountry} key={index} />
         ))}
       </ul>
